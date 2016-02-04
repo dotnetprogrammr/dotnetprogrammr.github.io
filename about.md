@@ -4,27 +4,11 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there! welcome to my blog. Here you will find mainly articles on Microsoft's .Net framework but you may also find a few other suprises.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I have been a professional software developer since 2006 and for the most part working with Microsoft’s .NET framework; if you do not know what this is, why are you here! I have seen the framework expand with added functionality but never quicker than it is today. With Microsoft’s shift in focus to be a services company we are seeing greater flexibility in their development of the framework and its supporting toolset. This is great for us developers, it means we get to play with new toys but does cause us headaches as we try to understand them. I hope to add my experiences into the mix in an attempt to help my fellow developers.
 
-There are currently two themes built on Poole:
+In the past I have used many components of the .NET framework, from Windows forms to WPF, WCF and Windows services. Most recently I have been writing RESTful HTTP APIs; I started with the WCF web API preview then migrated over when this component was absorbed into ASP.NET; I am now following development of ASP.NET Core 1.0 (AKA ASP.NET 5 / ASP.NET vNext).
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+I hope to receive your input into my work and hope that I can solve someone else’s problem or give them their next idea.
