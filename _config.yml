@@ -14,7 +14,9 @@ baseurl:          /
 
 author:
   name:           'Michael Marshall'
-  url:            https://twitter.com/dotnetprogrammr
+  url:            http://dotnetprogrammr.github.io
+  twitter:        https://twitter.com/dotnetprogrammr
+  linkedIn:       https://uk.linkedin.com/in/michael-marshall-ba87a06
 
 paginate:         5
 
@@ -24,5 +26,10 @@ gems: [jekyll-paginate]
 # Custom vars
 version:          2.1.0
 
+# GitHub
 github:
   repo:           https://github.com/dotnetprogrammr
+
+# Contact
+contact:
+  twitter:        https://twitter.com/dotnetprogrammr

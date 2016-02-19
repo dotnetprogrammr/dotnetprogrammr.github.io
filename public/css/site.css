@@ -1,0 +1,12 @@
+.sidebar .contact-list {
+  text-align: center;
+}
+
+.sidebar .contact-list a:hover,
+.sidebar .contact-list a:focus {
+    text-decoration: none;
+}
+
+.theme-base-08 .fa-inverse {
+  color: #ac4142;
+}

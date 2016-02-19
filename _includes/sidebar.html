@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
@@ -25,12 +25,36 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    
+    <div class="sidebar-sticky">
+      <div id="contact-list" class="contact-list">
+        {% if site.github.repo %}
+          <a href="{{ site.github.repo }}" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-github fa-stack-2x"></i>
+            </span>
+          </a>
+        {% endif %}
+        {% if site.author.twitter %}
+          <a href="{{ site.author.twitter }}" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        {% endif %}
+        {% if site.author.linkedIn %}
+          <a href="{{ site.author.linkedIn }}" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        {% endif %}
+      </div>
+        
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    </div>
   </div>
 </div>
