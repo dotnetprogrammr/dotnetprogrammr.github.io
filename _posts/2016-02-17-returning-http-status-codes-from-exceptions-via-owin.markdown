@@ -7,7 +7,9 @@ categories: OWIN ASP.NET C#
 ---
 In the past when writing APIs using ASP.NET, I have used Exceptions as a method of breaking out of the current call chain and returning an error response to the client. I have recently been investigating exception handling in ASP.NET Core 1.0 and how to return a status code for a specific exception.
 
-The "standard" middleware from Microsoft has mechanisms for handling unhandled exceptions and returning a 500 response with re-execution of the failing request on a separate pipeline (see the ExceptionHandler middleware in the Microsoft.AspNetCore.Diagnostics package). This gave me the idea to create my own middleware. Whilst this may not be the most ideal place in the pipeline to perform such functionality it would be a good lesson in creating middleware.
+> This article will not detail middleware iteself as it has already been done many times, Microsoft documentation can be found [here][microsoft-middleware].
+
+The "default" middleware from Microsoft has mechanisms for handling unhandled exceptions and returning a 500 response with re-execution of the failing request on a separate pipeline (see the ExceptionHandler middleware in the Microsoft.AspNetCore.Diagnostics package). This gave me the idea to create my own middleware. Whilst this may not be the most ideal place in the pipeline to perform such functionality it would be a good lesson in creating middleware.
 
 Firstly I needed to create a method of mapping exceptions to a HTTP status code. I created a class that would handle this in a fluent syntax whilst populating a dictionary of exception type to status code. The resultant syntax looks as follows:
 
@@ -22,4 +24,5 @@ It was then a case of creating a middleware class that wraps the request pipelin
 
 The repository for the middleware can be found [here][middleware-repository], feel free to raise an issue or submit a pull request.
 
+[microsoft-middleware]: https://docs.asp.net/en/latest/fundamentals/middleware.html
 [middleware-repository]: https://github.com/dotnetprogrammr/Dnp.AspNetCore.Diagnostics
