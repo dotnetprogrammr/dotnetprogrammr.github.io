@@ -7,7 +7,7 @@ layout:   default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
   
-  {% if page.comments %}
+  {% if jekyll.environment == "production" and page.comments %}
     {% include disqus.html %}
   {% endif %}
 </div>
