@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Returning HTTP status codes from exceptions via OWIN"
-date:       2016-02-17 14:44:12 +0000
+date:       2016-02-17 00:00:00 +0000
 comments:   true
 categories: C# ASP.NET
 tags:       [C#, ASP.NET, OWIN]
